@@ -1,0 +1,598 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/kuka/youbot/protos/KukaBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/kuka/youbot/protos/Youbot.proto"
+
+WorldInfo {
+  info [
+    "Simulation of the KUKA youBot robot."
+    "This model includes an accurate and fast simulation of the Meccanum wheels."
+    "The robot can be equiped with various sensors (including the Microsoft Kinect) and configured with zero, one or two arms."
+  ]
+  title "KUKA youBot"
+  basicTimeStep 16
+  contactProperties [
+    ContactProperties {
+      material1 "InteriorWheelMat"
+      coulombFriction [
+        0, 2, 0
+      ]
+      frictionRotation -0.785398 0
+      bounce 0
+      forceDependentSlip [
+        10, 0
+      ]
+    }
+    ContactProperties {
+      material1 "ExteriorWheelMat"
+      coulombFriction [
+        0, 2, 0
+      ]
+      frictionRotation 0.785398 0
+      bounce 0
+      forceDependentSlip [
+        10, 0
+      ]
+    }
+  ]
+}
+Viewpoint {
+  orientation 0.44086201607406333 0.43689248478043713 -0.7840699200488996 1.82046327002622
+  position -3.3387157156528144 12.915360872811986 21.00095855181134
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Solid {
+  translation -2.57 0 0.22
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.988235 1 0.772549
+          emissiveColor 0.988235 1 0.772549
+        }
+      }
+      geometry Box {
+        size 0.1 24.5 0.6
+      }
+    }
+  ]
+  boundingObject Box {
+    size 0.1 24.5 0.6
+  }
+}
+Transform {
+  translation -0.55 0.14 0
+  scale 1 1 0.01
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 0 0
+          emissiveColor 1 0 0
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+}
+Transform {
+  translation 4.41 0.16 0
+  scale 0.39 7 0.01
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0 0 0
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+}
+Transform {
+  translation -5.74 3.62 0
+  scale 15 0.39 0.01
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+          emissiveColor 1 1 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+}
+Transform {
+  translation -1.01 0.14 0
+  scale 1 1 0.01
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 0
+          emissiveColor 1 1 0
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+}
+Transform {
+  translation -0.85 0.14 0
+  scale 1 1 0.01
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.439216 0.945098 1
+          emissiveColor 0.439216 0.945098 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+}
+Transform {
+  translation -0.7 0.14 0
+  scale 1 1 0.01
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.333333 1 0
+          emissiveColor 0.333333 1 0
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+}
+Transform {
+  translation -3.7 0.13 0
+  scale 1 1 0.01
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.333333 1 0
+          emissiveColor 0.333333 1 0
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+}
+Transform {
+  translation -4 0.13 0
+  scale 1 1 0.01
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 0
+          emissiveColor 1 1 0
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+}
+Transform {
+  translation -3.55 0.13 0
+  scale 1 1 0.01
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.439216 0.945098 1
+          emissiveColor 0.439216 0.945098 1
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+}
+Transform {
+  translation -3.85 0.13 0
+  scale 1 1 0.01
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 0 0
+          emissiveColor 1 0 0
+        }
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+}
+KukaBox {
+  translation 2.4926402079193086 -1.6729168348576855 0.02493378250000326
+  rotation -3.1742645409847504e-12 1.1175272644593247e-12 -1 4.962991484452002e-06
+  color 1 1 0
+  size 0.05 0.05 0.05
+}
+KukaBox {
+  translation 2.49263 -1.7929 0.024933782500003263
+  rotation -1.8032495855761164e-11 -5.1521655335809456e-12 -1 2.451770000301796e-06
+  name "Kuka box(1)"
+  color 1 1 0
+  size 0.05 0.05 0.05
+}
+KukaBox {
+  translation 2.49263 -1.9429 0.024933782500003263
+  rotation 5.152157574625009e-12 -1.1592316552935163e-11 -1 2.4517700003486434e-06
+  name "Kuka box(2)"
+  color 1 1 0
+  size 0.05 0.05 0.05
+}
+KukaBox {
+  translation 2.49263 -2.0729 0.024933782500003263
+  rotation -2.57606813254925e-11 -2.962485668893974e-11 -1 2.451769991479991e-06
+  name "Kuka box(3)"
+  color 1 1 0
+  size 0.05 0.05 0.05
+}
+KukaBox {
+  translation 2.49263 -2.2329 0.024933782500003263
+  rotation -1.2880263954248405e-12 -7.728216822235497e-12 -1 2.4517699959191117e-06
+  name "Kuka box(4)"
+  color 1 1 0
+  size 0.05 0.05 0.05
+}
+KukaBox {
+  translation 2.49263 -2.3829 0.024933782500003263
+  rotation -2.57606813254925e-11 -2.962485668893974e-11 -1 2.451769991479991e-06
+  name "Kuka box(5)"
+  color 1 1 0
+  size 0.05 0.05 0.05
+}
+KukaBox {
+  translation 2.47263 2.4071 0.024933782505705052
+  rotation -3.864088673335918e-12 -1.5456435221527373e-11 -1 2.4517700003029727e-06
+  name "Kuka box(6)"
+  color 0 1 0
+  size 0.05 0.05 0.05
+}
+KukaBox {
+  translation 2.47263 1.8871 0.024933782505705052
+  rotation 5.152138626803706e-12 3.864113931342194e-12 -1 2.451770000355785e-06
+  name "Kuka box(7)"
+  color 0.803922 1 0.490196
+  size 0.05 0.05 0.05
+}
+KukaBox {
+  translation 2.47263 2.0371 0.024933782505705052
+  rotation 1.288021578174517e-12 1.0304275164961528e-11 -1 2.4517731933313928e-06
+  name "Kuka box(8)"
+  color 0 1 0
+  size 0.05 0.05 0.05
+}
+KukaBox {
+  translation 2.47263 2.1771 0.024933782505705056
+  rotation -5.1521262196727735e-12 -1.4168400884921834e-11 -1 2.4517699914934772e-06
+  name "Kuka box(9)"
+  color 0 1 0
+  size 0.05 0.05 0.05
+}
+KukaBox {
+  translation 2.47263 2.3271 0.024933782505705056
+  rotation -5.1521262196727735e-12 -1.4168400884921834e-11 -1 2.4517699914934772e-06
+  name "Kuka box(10)"
+  color 0 1 0
+  size 0.05 0.05 0.05
+}
+KukaBox {
+  translation 2.49263 2.5071 0.024933782500003263
+  rotation -2.57606813254925e-11 -2.962485668893974e-11 -1 2.451769991479991e-06
+  name "Kuka box(11)"
+  color 0 1 0
+  size 0.05 0.05 0.05
+}
+KukaBox {
+  translation 4.41263 1.7371 0.02493378616759602
+  rotation 5.1521562508651756e-12 -1.0304280786312963e-11 -1 2.4517700003881092e-06
+  name "Kuka box(12)"
+  color 0.678431 0.952941 0.972549
+  size 0.05 0.05 0.05
+}
+KukaBox {
+  translation 4.40263 1.8971 0.024933782500003263
+  rotation 6.440173009600445e-12 5.152151409528191e-12 -1 2.451770000358635e-06
+  name "Kuka box(13)"
+  color 0 0.666667 1
+  size 0.05 0.05 0.05
+}
+KukaBox {
+  translation 4.40263 2.0871 0.024933782500003263
+  rotation -3.6064982456574776e-11 -1.8032546464073596e-11 -1 2.4517699956921658e-06
+  name "Kuka box(14)"
+  color 0 0.666667 1
+  size 0.05 0.05 0.05
+}
+KukaBox {
+  translation 4.40263 2.2471 0.024933782500003263
+  rotation -3.6064982456574776e-11 -1.8032546464073596e-11 -1 2.4517699956921658e-06
+  name "Kuka box(15)"
+  color 0 0.666667 1
+  size 0.05 0.05 0.05
+}
+KukaBox {
+  translation 4.40263 2.4471 0.02493378250000326
+  rotation 5.152124654900111e-12 1.5456436772611008e-11 -1 2.4517699959170907e-06
+  name "Kuka box(16)"
+  color 0 0.666667 1
+  size 0.05 0.05 0.05
+}
+KukaBox {
+  translation 4.40263 2.6371 0.02493378250000326
+  rotation 5.152124654900111e-12 1.5456436772611008e-11 -1 2.4517699959170907e-06
+  name "Kuka box(17)"
+  color 0 0.666667 1
+  size 0.05 0.05 0.05
+}
+KukaBox {
+  translation 7.47256 0.037095 0.02493378260353792
+  rotation 8.764366909990937e-12 1.392081573753499e-12 -1 2.2562577280311334e-06
+  name "Kuka box(18)"
+  color 1 0 0
+  size 0.05 0.05 0.05
+}
+KukaBox {
+  translation 7.59263 0.0370956 0.02493378260353792
+  rotation -2.9624844054630253e-11 1.5456394111241756e-11 -1 2.4517700004982993e-06
+  name "Kuka box(19)"
+  color 1 0 0
+  size 0.05 0.05 0.05
+}
+KukaBox {
+  translation 7.26263 0.0370957 0.02493378260353792
+  rotation -2.9624844054630253e-11 1.5456394111241756e-11 -1 2.4517700004982993e-06
+  name "Kuka box(20)"
+  color 1 0 0
+  size 0.05 0.05 0.05
+}
+KukaBox {
+  translation 7.15263 0.037096 0.024933782500003263
+  rotation -7.72823096956458e-12 1.2880349334368346e-11 -1 2.451770000021306e-06
+  name "Kuka box(21)"
+  color 1 0 0
+  size 0.05 0.05 0.05
+}
+KukaBox {
+  translation 7.34263 0.0370958 0.02493378260353792
+  rotation 2.0613527022128846e-11 3.4965118386851213e-13 -1 2.4445631508550203e-06
+  name "Kuka box(22)"
+  color 1 0 0
+  size 0.05 0.05 0.05
+}
+KukaBox {
+  translation 6.33269 0.0470963 0.0249338
+  rotation -5.786076565518116e-12 6.2717436208419026e-12 -1 2.6342501972793815e-06
+  name "Kuka box(23)"
+  color 1 0.45098 0.45098
+  size 0.05 0.05 0.05
+}
+RectangleArena {
+  floorSize 25 25
+  floorAppearance Appearance {
+    texture ImageTexture {
+      url [
+        "../../../../Desktop/youbot board11.png"
+      ]
+    }
+    textureTransform TextureTransform {
+      scale 0.02 0.02
+    }
+  }
+}
+Youbot {
+  translation -1.5931815298425003 0.006718834478180472 0.10193983293286579
+  rotation -0.0015027372944818474 0.027949624887243476 0.9996082033723445 0.05001788220967918
+  controller "kuka_controller"
+  bodySlot [
+    DistanceSensor {
+      translation 0.29 -5.5743e-05 -0.07
+      rotation 1 0 0 1.57
+      name "d1"
+      lookupTable [
+        0 0 0
+        0.12 100000 0
+      ]
+      type "infra-red"
+    }
+    Camera {
+      translation 0.26 0 0.1
+      rotation 0.11734399007545644 0.891320924615199 0.43792396296192543 0.584059
+      name "color_camera"
+      fieldOfView 0.1
+      width 1
+      height 1
+    }
+    DistanceSensor {
+      translation 0.27 -0.0015 -0.088
+      rotation 0 1 0 1.57
+      name "s0"
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation 0.27 -0.0085 -0.088
+      rotation 0 1 0 1.57
+      name "s1"
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation 0.27 -0.0065 -0.088
+      rotation 0 1 0 1.57
+      name "s2"
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation 0.27 -0.002 -0.088
+      rotation 0 1 0 1.57
+      name "s3"
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation 0.27 0.0045 -0.088
+      rotation 0 1 0 1.57
+      name "s4"
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation 0.27 0.0065 -0.088
+      rotation 0 1 0 1.57
+      name "s5"
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation 0.27 0.0085 -0.088
+      rotation 0 1 0 1.57
+      name "s6"
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation 0.27 0.0015 -0.088
+      rotation 0 1 0 1.57
+      name "s7"
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation 0.27 0.151 -0.088176
+      rotation 0 1 0 1.57
+      name "left_distance_sensor"
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation 0.27 -0.151 -0.088
+      rotation 0 1 0 1.57
+      name "right_distance_sensor"
+      type "infra-red"
+    }
+  ]
+}
+Youbot {
+  translation -4.55687 0.00359141 0.106222
+  rotation -0.0015027372944818474 0.027949624887243476 0.9996082033723445 0.05001788220967918
+  name "youBot(1)"
+  controller "kuka_controller1"
+  bodySlot [
+    DistanceSensor {
+      translation 0.29 -5.5743e-05 -0.07
+      rotation 1 0 0 1.57
+      name "d1"
+      lookupTable [
+        0 0 0
+        0.14 100000 0
+      ]
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation 0.2 -5.5733e-05 0.43
+      rotation 1 0 0 1.57
+      name "d2"
+      lookupTable [
+        0 0 0
+        0.48 100000 0
+      ]
+      type "infra-red"
+    }
+    Camera {
+      translation 0.26 0 0.1
+      rotation 0.11734399007545644 0.891320924615199 0.43792396296192543 0.584059
+      name "color_camera"
+      fieldOfView 0.1
+      width 1
+      height 1
+    }
+    DistanceSensor {
+      translation 0.27 -0.0015 -0.088
+      rotation 0 1 0 1.57
+      name "s0"
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation 0.27 -0.0085 -0.088
+      rotation 0 1 0 1.57
+      name "s1"
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation 0.27 -0.0065 -0.088
+      rotation 0 1 0 1.57
+      name "s2"
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation 0.27 -0.002 -0.088
+      rotation 0 1 0 1.57
+      name "s3"
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation 0.27 0.0045 -0.088
+      rotation 0 1 0 1.57
+      name "s4"
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation 0.27 0.0065 -0.088
+      rotation 0 1 0 1.57
+      name "s5"
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation 0.27 0.0085 -0.088
+      rotation 0 1 0 1.57
+      name "s6"
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation 0.27 0.0015 -0.088
+      rotation 0 1 0 1.57
+      name "s7"
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation 0.27 0.151 -0.088176
+      rotation 0 1 0 1.57
+      name "left_distance_sensor"
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation 0.27 -0.151 -0.088
+      rotation 0 1 0 1.57
+      name "right_distance_sensor"
+      type "infra-red"
+    }
+  ]
+}
